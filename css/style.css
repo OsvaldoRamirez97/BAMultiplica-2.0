@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+.elementos {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Header */
+
+.menuFondo{
+    background-color: rgba(115, 112, 216, 1);
+}
+
+.header .logo{
+    line-height: 120px;
+    color: white;
+    font-size: 35px;
+    width: 10%;
+}
+.header .elementos{
+    position: relative;
+}
+
+.header .menu{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+}
+
+.header .menu li{
+    line-height: 120px;
+    margin-left: 40px;
+    cursor: pointer; 
+    display: inline-block;  
+}
+
+.header .menu i,
+.header .menu a{
+    color: rgba(255, 255, 255, .781);
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.header .menu a:hover{
+    color: white;
+}
+
+.header .menu form input[type="text"]{
+    position: absolute;
+    top: 77px;
+    right: 0;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.oculto{
+    padding: 0;
+    width: 0;
+    transition: all .3s;
+}
+
+.visible{
+    padding: 14px;
+    width: 140px;
+    transition: all .3s;
+}
+
