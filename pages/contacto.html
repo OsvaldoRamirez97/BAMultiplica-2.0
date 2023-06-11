@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header id="headerIdIndex">
+      <div class="menuFondo header">
+        <div class="contenedor">
+          <div class="elementos">
+            <div>
+              <h2 class="logo">Logotipo</h2>
+            </div>
+            <div class="menu">
+              <ul class="items">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li>
+                  <a href="/pages/carrito.html"
+                    ><i class="bi bi-cart-fill"></i
+                  ></a>
+                </li>
+                <li>
+                  <form action="" method="post">
+                    <input
+                      type="text"
+                      name="buscar"
+                      id="buscador"
+                      placeholder="Buscar .."
+                      class="oculto"
+                    />
+                    <a href="#" id="buscar" onclick="buscar()">
+                      <i class="bi bi-search"></i>
+                    </a>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="formularioContacto">
+        <form class="mx-auto w-75 p-2 mt-5 mb-5">
+          <div class="mb-3">
+            <label for="nombre" class="form-label mt-lg-4">Nombre</label>
+            <input
+              type="text"
+              class="form-control inputColor"
+              id="nombre"
+              placeholder="Ej: Juan"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input
+              type="text"
+              class="form-control inputColor"
+              id="apellido"
+              placeholder="Ej: Perez"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="correoElectronico" class="form-label"
+              >Correo Electrónico</label
+            >
+            <input
+              type="email"
+              class="form-control inputColor"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Ej: juan_perez@gmail"
+            />
+          </div>
+
+          <div class="mb-3">
+            <input type="checkbox" class="btnCheck" id="confirmarSuscripcion" />
+            <label for="confirmarSuscripcion">Enviar ofertas a mi correo</label>
+          </div>
+
+          <div>
+            <textarea
+              class="form-control w-100 inputColor"
+              id="consulta"
+              placeholder="Dejá tu consulta .."
+              style="height: 20vh"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btnColor mt-3 mb-4">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="iconos">
+        <a href="#">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-facebook"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="../js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

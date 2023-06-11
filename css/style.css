@@ -1,78 +1,187 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.contenedor{
-    width: 90%;
-    margin: auto;
+.contenedor {
+  width: 90%;
+  margin: auto;
 }
 
 .elementos {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Header */
 
-.menuFondo{
-    background-color: rgba(115, 112, 216, 1);
+.menuFondo {
+  background-color: rgba(115, 112, 216, 1);
 }
 
-.header .logo{
-    line-height: 120px;
-    color: white;
-    font-size: 35px;
-    width: 10%;
+.header .logo {
+  line-height: 100px;
+  color: white;
+  font-size: 35px;
+  width: 10%;
 }
-.header .elementos{
-    position: relative;
-}
-
-.header .menu{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    right: 0;
+.header .elementos {
+  position: relative;
 }
 
-.header .menu li{
-    line-height: 120px;
-    margin-left: 40px;
-    cursor: pointer; 
-    display: inline-block;  
+.header .menu {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+}
+
+.header .menu li {
+  line-height: 100px;
+  margin-left: 40px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .header .menu i,
-.header .menu a{
-    color: rgba(255, 255, 255, .781);
-    text-decoration: none;
-    font-size: 19px;
+.header .menu a {
+  color: rgba(255, 255, 255, 0.781);
+  text-decoration: none;
+  font-size: 19px;
 }
 
-.header .menu a:hover{
-    color: white;
+.header .menu a:hover {
+  color: white;
 }
 
-.header .menu form input[type="text"]{
-    position: absolute;
-    top: 77px;
-    right: 0;
-    outline: none;
-    border: none;
-    border-radius: 2px;
+.header .menu form input[type="text"] {
+  position: absolute;
+  top: 77px;
+  right: 0;
+  outline: none;
+  border: none;
+  border-radius: 2px;
 }
 
-.oculto{
-    padding: 0;
-    width: 0;
-    transition: all .3s;
+.oculto {
+  padding: 0;
+  width: 0;
+  transition: all 0.3s;
+  height: 1vh;
 }
 
-.visible{
-    padding: 14px;
-    width: 140px;
-    transition: all .3s;
+.visible {
+  padding: 2vh;
+  width: 13vw;
+  height: 1vh;
+  transition: all 0.3s;
 }
 
+.carousel-item {
+  text-align: center;
+  margin: 10% 0;
+}
+
+.carruselFondo {
+  background-image: url(https://placekitten.com/g/1300/1200) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 20% !important;
+}
+
+.btnColor {
+  background-color: rgba(115, 112, 216, 1) !important;
+  border-color: rgba(115, 112, 216, 1) !important;
+}
+
+.btnColorCarrusel {
+  color: rgba(115, 112, 216, 1) !important;
+  font-size: 5vh;
+}
+
+.formaCarrusel {
+  border-radius: 5vh !important;
+}
+/* Fomulario de contacto */
+.formularioContacto {
+  background-color: rgba(115, 112, 216, 0.5);
+  border-radius: 10px;
+  width: 40%;
+  margin: auto;
+}
+
+.labelColor {
+  background-color: white !important;
+  opacity: 0.5 !important;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px solid rgba(115, 112, 216, 1);
+}
+.inputColor {
+  background-color: white !important;
+  opacity: 0.5 !important;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  color: rgba(115, 112, 216, 1);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid rgba(115, 112, 216, 1);
+  border-radius: 0.15em;
+  display: inline-grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em rgba(115, 112, 216, 1);
+  border: 0.15em rgba(115, 112, 216, 1);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.iconos a {
+  color: rgba(255, 255, 255, 0.781);
+  text-decoration: none;
+}
+
+.iconos a:hover {
+  color: white;
+}
+
+.iconos {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  letter-spacing: 5vh;
+  font-size: 3vh;
+}
+.footer {
+  background-color: rgba(115, 112, 216, 1);
+  padding: 2vh;
+  z-index: 200;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* El footer no se posiciona bien */
+
+.mainVacio{
+  height: 100vh !important;
+}

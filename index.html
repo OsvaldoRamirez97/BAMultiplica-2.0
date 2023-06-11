@@ -18,7 +18,7 @@
     <title>Productos electrónicos</title>
   </head>
   <body>
-    <header>
+    <header id="headerId">
       <div class="menuFondo header">
         <div class="contenedor">
           <div class="elementos">
@@ -27,16 +27,24 @@
             </div>
             <div class="menu">
               <ul class="items">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/ofertas.html">Ofertas</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
                 <li>
-                  <a href=""><i class="bi bi-cart-fill"></i></a>
+                  <a href="/pages/carrito.html"
+                    ><i class="bi bi-cart-fill"></i
+                  ></a>
                 </li>
                 <li>
                   <form action="" method="post">
-                    <input type="text" name="buscar" id="buscador" placeholder="Buscar .." class="oculto">
+                    <input
+                      type="text"
+                      name="buscar"
+                      id="buscador"
+                      placeholder="Buscar .."
+                      class="oculto"
+                    />
                     <a href="#" id="buscar" onclick="buscar()">
                       <i class="bi bi-search"></i>
                     </a>
@@ -49,6 +57,150 @@
       </div>
     </header>
 
+    <main id="main">
+      <div
+        id="myCarousel"
+        class="carousel slide carruselFondo"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active btnColor"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            class="btnColor"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            class="btnColor"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://placekitten.com/g/1300/1200"
+              class="imagenCarrusel formaCarrusel"
+              alt="..."
+              width="1000vh"
+              height="500vh"
+            />
+
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <h1>Example headline.</h1>
+                <p>
+                  Some representative placeholder content for the first slide of
+                  the carousel.
+                </p>
+                <p>
+                  <a class="btn btn-lg btnColor btn-primary" href="#"
+                    >Sign up today</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://placekitten.com/g/900/1100"
+              class="imagenCarrusel formaCarrusel"
+              alt="..."
+              width="1000vh"
+              height="500vh"
+            />
+
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <h1>Another example headline.</h1>
+                <p>
+                  Some representative placeholder content for the second slide
+                  of the carousel.
+                </p>
+                <p>
+                  <a class="btn btn-lg btnColor btn-primary" href="#"
+                    >Learn more</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://placekitten.com/g/860/500"
+              class="imagenCarrusel formaCarrusel"
+              alt="..."
+              width="1000vh"
+              height="500vh"
+            />
+
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <h1>One more for good measure.</h1>
+                <p>
+                  Some representative placeholder content for the third slide of
+                  this carousel.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary btnColor" href="#"
+                    >Browse gallery</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-caret-left-fill btnColorCarrusel"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <i class="bi bi-caret-right-fill btnColorCarrusel"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="iconos">
+        <a href="#">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-facebook"></i>
+        </a>
+      </div>
+    </footer>
     <script src="js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

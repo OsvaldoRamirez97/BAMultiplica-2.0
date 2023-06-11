@@ -1,4 +1,3 @@
-//Buscador
 let buscar = () => {
     let inputSearch = document.getElementById("buscador");
     if(inputSearch.classList.contains("oculto")){
@@ -9,3 +8,6 @@ let buscar = () => {
         inputSearch.classList.add("oculto");
     }
 }
+
+
+
