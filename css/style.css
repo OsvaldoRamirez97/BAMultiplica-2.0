@@ -21,13 +21,26 @@
 }
 
 .header .logo {
-  line-height: 100px;
   color: white;
   font-size: 35px;
-  width: 10%;
+  display: flex;
 }
+
+dl,
+ol,
+ul {
+  margin-bottom: 0 !important;
+}
+
 .header .elementos {
   position: relative;
+  height: 10vh;
+  justify-content: space-around;
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "logo items";
+  align-items: center;
 }
 
 .header .menu {
@@ -38,6 +51,7 @@
 }
 
 .header .menu li {
+  grid-area: items;
   line-height: 100px;
   margin-left: 40px;
   cursor: pointer;
@@ -170,6 +184,32 @@ input[type="checkbox"]:checked::before {
   letter-spacing: 5vh;
   font-size: 3vh;
 }
+
+.construccion {
+  margin: auto;
+  width: 50%;
+}
+
+.imagenConstruccion {
+  width: 100%;
+}
+
+.card {
+  margin: 5vh;
+  border-radius: 15px !important;
+  display: flex;
+  text-align: center;
+}
+
+.mainProductos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: center;
+  margin: 5vh;
+}
+
 .footer {
   background-color: rgba(115, 112, 216, 1);
   padding: 2vh;
@@ -179,9 +219,8 @@ input[type="checkbox"]:checked::before {
   width: 100%;
 }
 
-
 /* El footer no se posiciona bien */
 
-.mainVacio{
+.mainVacio {
   height: 100vh !important;
 }
