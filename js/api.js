@@ -3,14 +3,14 @@ fetch("https://dummyjson.com/products")
     if (response.ok) {
       return response.json();
     } else {
-      throw new Error("NETWORK RESPONSE ERROR");
+      throw new Error("Error de la respuesta");
     }
   })
   .then((data) => {
     traerProductos(data);
-    listaProductos(data);
+    console.log(data)
   })
-  .catch((error) => console.error("FETCH ERROR:", error));
+  .catch((error) => console.error("Fetch error:", error));
 
 function traerProductos(data) {
   const producto = data.products[0];

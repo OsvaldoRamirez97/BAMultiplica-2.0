@@ -14,7 +14,7 @@
   flex-direction: row;
 }
 
-/* Header */
+/* Header incio */
 
 .menuFondo {
   background-color: rgba(115, 112, 216, 1);
@@ -92,6 +92,10 @@ ul {
   transition: all 0.3s;
 }
 
+/* Header fin */
+
+/* Carrusel inicio*/
+
 .carousel-item {
   text-align: center;
   margin: 10% 0;
@@ -104,6 +108,13 @@ ul {
   height: 20% !important;
 }
 
+.formaCarrusel {
+  border-radius: 5vh !important;
+}
+/* Carrusel fin */
+
+/* Botón */
+
 .btnColor {
   background-color: rgba(115, 112, 216, 1) !important;
   border-color: rgba(115, 112, 216, 1) !important;
@@ -114,9 +125,8 @@ ul {
   font-size: 5vh;
 }
 
-.formaCarrusel {
-  border-radius: 5vh !important;
-}
+/*Botón fin */
+
 /* Fomulario de contacto */
 .formularioContacto {
   background-color: rgba(115, 112, 216, 0.5);
@@ -166,25 +176,9 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
-.iconos a {
-  color: rgba(255, 255, 255, 0.781);
-  text-decoration: none;
-}
+/* Formulario de contacto fin */
 
-.iconos a:hover {
-  color: white;
-}
-
-.iconos {
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: end;
-  letter-spacing: 5vh;
-  font-size: 3vh;
-}
-
+/* Relleno de página, cambiar */
 .construccion {
   margin: auto;
   width: 50%;
@@ -193,6 +187,9 @@ input[type="checkbox"]:checked::before {
 .imagenConstruccion {
   width: 100%;
 }
+
+
+/* Productos */
 
 .card {
   margin: 5vh;
@@ -210,6 +207,10 @@ input[type="checkbox"]:checked::before {
   margin: 5vh;
 }
 
+/* Productos fin */
+
+/*Footer*/
+
 .footer {
   background-color: rgba(115, 112, 216, 1);
   padding: 2vh;
@@ -217,6 +218,26 @@ input[type="checkbox"]:checked::before {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+/* Iconos */
+.iconos a {
+  color: rgba(255, 255, 255, 0.781);
+  text-decoration: none;
+}
+
+.iconos a:hover {
+  color: white;
+}
+
+.iconos {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  letter-spacing: 5vh;
+  font-size: 3vh;
 }
 
 /* El footer no se posiciona bien */
