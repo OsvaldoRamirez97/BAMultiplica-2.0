@@ -191,11 +191,32 @@ input[type="checkbox"]:checked::before {
 
 /* Productos */
 
+.ajusteDeTarjeta{
+  height: 30% !important;
+}
+
+.imgTarjeta{
+  width: 50%;
+  height: 20vh;
+  margin: auto;
+}
+
+.tituloTarjeta{
+  height: 15vh;
+}
+
 .card {
   margin: 5vh;
   border-radius: 15px !important;
   display: flex;
   text-align: center;
+}
+
+.descripcion{
+  height: 15vh;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .mainProductos {
