@@ -5,7 +5,6 @@
 }
 
 
-@media (min-width: 1200px) {
 /* Header incio */
 
 .contenedor {
@@ -312,7 +311,6 @@ input[type="checkbox"]:checked::before {
 }
 
 
-}
 
 
 /* Responsive Desing*/
