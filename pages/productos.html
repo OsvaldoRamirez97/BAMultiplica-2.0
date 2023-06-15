@@ -20,117 +20,52 @@
     <title>Productos</title>
   </head>
   <body>
-    <header id="headerIdIndex">
+    <header>
       <div class="menuFondo header">
         <div class="contenedor">
           <div class="elementos">
-            <div>
-              <h2 class="logo">Logotipo</h2>
+            <div class="contenedorLogo">
+                  <p class="logo"><a href="../index.html">LOGOTIPO</a></p>
             </div>
-            <div class="menu">
+            <nav class="menu">
+              <div class="buscador" >
+                <form action="" method="post">
+                  <input
+                    type="text"
+                    name="buscar"
+                    placeholder="Buscador"
+                    class=""
+                  />
+                  <a href="#" id="buscar" onclick="buscar()">
+                    <i class="bi bi-search"></i>
+                  </a>
+                </form>
+              </div>
               <ul class="items">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="ofertas.html">Ofertas</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li>
-                  <a href="/pages/carrito.html"><i class="bi bi-cart-fill"></i></a>
-                </li>
-                <li>
-                  <form action="" method="post">
-                    <input
-                      type="text"
-                      name="buscar"
-                      id="buscador"
-                      placeholder="Buscar .."
-                      class="oculto"
-                    />
-                    <a href="#" id="buscar" onclick="buscar()">
-                      <i class="bi bi-search"></i>
-                    </a>
-                  </form>
-                </li>
+                  <a href="carrito.html"
+                  ><i class="bi bi-cart-fill"></i
+                    ></a>
+                  </li>
               </ul>
-            </div>
+            </nav>
           </div>
         </div>
       </div>
     </header>
     <main class="mainProductos">
 
-      <div class="card ajusteDeTarjeta" id="card" style="width: 18rem">
-        <img src="" id="imagenProducto" class="imgTarjeta"  alt="..." /> 
-        <div class="card-body">
-  
-          <h1 id="producto" class="tituloTarjeta"></h1>
-  
-          <p id="descripcion" class="h-25 descripcion">
-          </p>
-          <a href="#" class="btn btn-primary btnColor botonTarjeta">Ver mas</a>
-        </div>
+      <div class="filtros">
+        <ul>
+          
+        </ul>
       </div>
 
-      <div class="card ajusteDeTarjeta" id="card" style="width: 18rem">
-        <img src="" id="imagenProducto2" class="imgTarjeta"  alt="..." /> 
-        <div class="card-body">
-  
-          <h1 id="producto2" class="tituloTarjeta"></h1>
-  
-          <p id="descripcion2" class="h-25 descripcion">
-          </p>
-          <a href="#" class="btn btn-primary btnColor botonTarjeta">Ver mas</a>
-        </div>
-      </div>
-
-      <div class="card ajusteDeTarjeta" id="card" style="width: 18rem">
-        <img src="" id="imagenProducto3" class="imgTarjeta"  alt="..." /> 
-        <div class="card-body">
-  
-          <h1 id="producto3" class="tituloTarjeta"></h1>
-  
-          <p id="descripcion3" class="h-25 descripcion">
-          </p>
-          <a href="#" class="btn btn-primary btnColor botonTarjeta">Ver mas</a>
-        </div>
-      </div>
-
-      <div class="card ajusteDeTarjeta" id="card" style="width: 18rem">
-        <img src="" id="imagenProducto4" class="imgTarjeta"  alt="..." /> 
-        <div class="card-body">
-  
-          <h1 id="producto4" class="tituloTarjeta"></h1>
-  
-          <p id="descripcion4" class="h-25 descripcion">
-          </p>
-          <a href="#" class="btn btn-primary btnColor botonTarjeta">Ver mas</a>
-        </div>
-      </div>
-
-      <div class="card ajusteDeTarjeta" id="card" style="width: 18rem">
-        <img src="" id="imagenProducto5" class="imgTarjeta"  alt="..." /> 
-        <div class="card-body">
-  
-          <h1 id="producto5" class="tituloTarjeta"></h1>
-  
-          <p id="descripcion5" class="h-25 descripcion">
-          </p>
-          <a href="#" class="btn btn-primary btnColor botonTarjeta">Ver mas</a>
-        </div>
-
-
-      </div>
-
-      <div class="card ajusteDeTarjeta" id="card" style="width: 18rem">
-        <img src="" id="imagenProducto6" class="imgTarjeta"  alt="..." /> 
-        <div class="card-body">
-  
-          <h1 id="producto6" class="tituloTarjeta"></h1>
-  
-          <p id="descripcion6" class="h-25 descripcion">
-          </p>
-          <a href="#" class="btn btn-primary btnColor botonTarjeta">Ver mas</a>
-        </div>
-      </div>
+     
 
     </main>
     

@@ -4,92 +4,100 @@
   box-sizing: border-box;
 }
 
+/* Header incio */
+
 .contenedor {
   width: 90%;
   margin: auto;
 }
 
 .elementos {
-  display: flex;
-  flex-direction: row;
-}
-
-/* Header incio */
-
-.menuFondo {
-  background-color: rgba(115, 112, 216, 1);
-}
-
-.header .logo {
-  color: white;
-  font-size: 35px;
-  display: flex;
-}
-
-dl,
-ol,
-ul {
-  margin-bottom: 0 !important;
-}
-
-.header .elementos {
-  position: relative;
-  height: 10vh;
-  justify-content: space-around;
   display: grid;
   grid-auto-columns: 1fr;
+  grid-template-columns: .6fr 1.4fr;
+  grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: "logo items";
+  grid-template-areas: 
+  "logo menu1";
+}
+
+.menuFondo {
+  background-color: #D87070;
+  height: 154px;
+}
+
+.logo{
+  font-size: 65px;
+  display: contents;
+}
+
+.header .logo a {
+  color: rgba(255, 255, 255, 0.781);
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: white;
+}
+
+.header .contenedorLogo{
+  display: flex;
+  grid-area: logo;
+  justify-content: start;
   align-items: center;
 }
 
-.header .menu {
+.menu{
+  display: inline;
+  grid-area: menu1;
+}
+
+.items {
+  list-style-type: none;
   display: flex;
-  flex-direction: row;
-  position: absolute;
-  right: 0;
+  justify-content: flex-end;
 }
 
-.header .menu li {
-  grid-area: items;
-  line-height: 100px;
-  margin-left: 40px;
-  cursor: pointer;
-  display: inline-block;
-}
 
-.header .menu i,
-.header .menu a {
-  color: rgba(255, 255, 255, 0.781);
+.menu .items li a{
   text-decoration: none;
-  font-size: 19px;
+  color: rgba(255, 255, 255, 0.781);
+  display: inline;
 }
 
-.header .menu a:hover {
+.menu .items li a:hover{
+  text-decoration: none;
   color: white;
 }
 
-.header .menu form input[type="text"] {
-  position: absolute;
-  top: 77px;
-  right: 0;
-  outline: none;
-  border: none;
-  border-radius: 2px;
+.menu .buscador form a i{
+  color: rgba(255, 255, 255, 0.781);
+  width: 10000px;
 }
 
-.oculto {
-  padding: 0;
-  width: 0;
-  transition: all 0.3s;
-  height: 1vh;
+.menu .buscador form a i:hover {
+  color: white;
 }
 
-.visible {
-  padding: 2vh;
-  width: 13vw;
-  height: 1vh;
-  transition: all 0.3s;
+.menu .buscador form input{
+  width: 658px;
+  height: 54px;
+  border-radius: 20px;
+  margin-top: 50px;
+  
+}
+
+.menu .buscador form input::placeholder{
+  color: #D87070;
+  padding-left: 1vh;
+}
+
+.items li{
+  margin: 1vh 15px;
+}
+
+.elementos .menu{
+  width: auto;
 }
 
 /* Header fin */
@@ -102,7 +110,7 @@ ul {
 }
 
 .carruselFondo {
-  background-image: url(https://placekitten.com/g/1300/1200) !important;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/102/791/small/soft-blurred-pastel-holographic-design.jpg) !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   height: 20% !important;
@@ -111,17 +119,30 @@ ul {
 .formaCarrusel {
   border-radius: 5vh !important;
 }
+
+.parrafoCarrusel{
+  font-size: 3vh;
+}
+
+.encabezadoCarrusel{
+  color:white;
+  text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+}
+
 /* Carrusel fin */
 
 /* Botón */
 
 .btnColor {
-  background-color: rgba(115, 112, 216, 1) !important;
-  border-color: rgba(115, 112, 216, 1) !important;
+  background-color: #D87070!important;
+  border-color: #D87070 !important;
 }
 
 .btnColorCarrusel {
-  color: rgba(115, 112, 216, 1) !important;
+  color: #D87070 !important;
   font-size: 5vh;
 }
 
@@ -129,7 +150,7 @@ ul {
 
 /* Fomulario de contacto */
 .formularioContacto {
-  background-color: rgba(115, 112, 216, 0.5);
+  background-color: rgba(216, 112, 112, 0.5);
   border-radius: 10px;
   width: 40%;
   margin: auto;
@@ -142,7 +163,7 @@ ul {
   margin-bottom: 1vh;
   border-radius: 5px;
   padding: 5px;
-  border: 2px solid rgba(115, 112, 216, 1);
+  border: 2px solid #D87070;
 }
 .inputColor {
   background-color: white !important;
@@ -151,10 +172,10 @@ ul {
 
 input[type="checkbox"] {
   appearance: none;
-  color: rgba(115, 112, 216, 1);
+  color: #D87070;
   width: 1.15em;
   height: 1.15em;
-  border: 0.15em solid rgba(115, 112, 216, 1);
+  border: 0.15em solid #D87070;
   border-radius: 0.15em;
   display: inline-grid;
   place-content: center;
@@ -168,8 +189,8 @@ input[type="checkbox"]::before {
   transform: scale(0);
   transform-origin: bottom left;
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em rgba(115, 112, 216, 1);
-  border: 0.15em rgba(115, 112, 216, 1);
+  box-shadow: inset 1em 1em #D87070;
+  border: 0.15em #D87070;
 }
 
 input[type="checkbox"]:checked::before {
@@ -191,18 +212,29 @@ input[type="checkbox"]:checked::before {
 
 /* Productos */
 
+.listaProductos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .ajusteDeTarjeta{
-  height: 30% !important;
+  height: 60vh !important;
+  width: 18rem;
+  box-shadow: 2px 2px rgba(216, 112, 112, 0.2);
 }
 
 .imgTarjeta{
   width: 50%;
   height: 20vh;
   margin: auto;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 
 .tituloTarjeta{
   height: 15vh;
+  font-size: 4vh;
 }
 
 .card {
@@ -233,7 +265,7 @@ input[type="checkbox"]:checked::before {
 /*Footer*/
 
 .footer {
-  background-color: rgba(115, 112, 216, 1);
+  background-color: rgba(216, 112, 112, 1);
   padding: 2vh;
   z-index: 200;
   left: 0;
