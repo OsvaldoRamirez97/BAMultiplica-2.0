@@ -46,6 +46,7 @@ fetch("https://dummyjson.com/products")
           imagenProductoElement.src = imagenProducto;
           nombreProductoElement.textContent = nombreProducto;
           descripcionProductoElement.textContent = descripcionProducto;
+          botonTarjeta.textContent = `Ver mas`;
           
           // Añadir elementos al contenedor
           productoDiv.appendChild(imagenProductoElement);
@@ -54,8 +55,6 @@ fetch("https://dummyjson.com/products")
           cuerpoTarjetaDiv.appendChild(descripcionProductoElement);
           productosContainer.appendChild(productoDiv);
           cuerpoTarjetaDiv.appendChild(botonTarjeta);
-          const cambiarBoton  = document.querySelector('#boton');
-          cambiarBoton.innerHTML = 'Ver mas';
 
         });
         
