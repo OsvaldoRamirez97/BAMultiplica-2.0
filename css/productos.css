@@ -49,3 +49,14 @@
   }
   
   /* Productos fin */
+
+/* Buscador por categoría */
+
+.menuDesplegable{
+  color: #ffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.btnDesplegable{
+  color: #ffff ;
+}
