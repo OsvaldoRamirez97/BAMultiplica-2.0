@@ -25,7 +25,7 @@ function filtrarProductos(data) {
   );
 
   productosFiltrados.forEach((producto) => {
-    const imagenProducto = producto.images[0];
+    const imagenProducto = producto.images[1];
     const precioProducto = producto.price;
 
     // Crear elementos HTML dinámicamente
@@ -66,8 +66,10 @@ function productosRandom(data) {
   const producto2 = data.products[random2];
   const producto3 = data.products[random3];
 
-  const contenedorVisitadosRecientemente = document.getElementById("visitadosRecientemente1");
-  
+  const contenedorVisitadosRecientemente = document.getElementById(
+    "visitadosRecientemente1"
+  );
+
   // Crear elementos HTML dinámicamente
   const productoDiv = document.createElement("div");
   const cuerpoTarjetaDiv = document.createElement("div");
@@ -95,9 +97,10 @@ function productosRandom(data) {
   contenedorVisitadosRecientemente.appendChild(productoDiv);
   cuerpoTarjetaDiv.appendChild(botonTarjeta);
 
+  const contenedorVisitadosRecientemente2 = document.getElementById(
+    "visitadosRecientemente2"
+  );
 
-  const contenedorVisitadosRecientemente2 = document.getElementById("visitadosRecientemente2");
-  
   // Crear elementos HTML dinámicamente
   const productoDiv2 = document.createElement("div");
   const cuerpoTarjetaDiv2 = document.createElement("div");
@@ -125,10 +128,10 @@ function productosRandom(data) {
   contenedorVisitadosRecientemente2.appendChild(productoDiv2);
   cuerpoTarjetaDiv2.appendChild(botonTarjeta2);
 
+  const contenedorVisitadosRecientemente3 = document.getElementById(
+    "visitadosRecientemente3"
+  );
 
-
-  const contenedorVisitadosRecientemente3 = document.getElementById("visitadosRecientemente3");
-  
   // Crear elementos HTML dinámicamente
   const productoDiv3 = document.createElement("div");
   const cuerpoTarjetaDiv3 = document.createElement("div");
@@ -155,5 +158,4 @@ function productosRandom(data) {
   cuerpoTarjetaDiv3.appendChild(precioProductoElement3);
   contenedorVisitadosRecientemente3.appendChild(productoDiv3);
   cuerpoTarjetaDiv3.appendChild(botonTarjeta3);
-
 }

@@ -43,7 +43,7 @@ fetch("https://dummyjson.com/products")
 
 function traerProductos(data) {
   const productos = data.products;
-  const productosContainer = document.getElementById("productosCgitontainer");
+  const productosContainer = document.getElementById("productosContainer");
 
   productos.forEach((producto) => {
     const imagenProducto = producto.images[0];
