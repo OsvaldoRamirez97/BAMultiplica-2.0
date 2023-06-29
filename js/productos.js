@@ -136,8 +136,6 @@ function traerProductos(data) {
   const productos = data.products;
   const productosContainer = document.getElementById("productosContainer");
 
-
-  //Limpiar cuerpo de la sección
   document.getElementById("productosContainer").innerHTML = "";
 
   productos.forEach((producto) => {
