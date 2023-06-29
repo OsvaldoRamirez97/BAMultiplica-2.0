@@ -136,6 +136,7 @@ function traerProductos(data) {
   const productos = data.products;
   const productosContainer = document.getElementById("productosContainer");
 
+  //Limpiando divs
   document.getElementById("productosContainer").innerHTML = "";
 
   productos.forEach((producto) => {
