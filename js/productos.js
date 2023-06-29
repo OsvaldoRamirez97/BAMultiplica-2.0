@@ -1,31 +1,122 @@
-function cambiarCategoria(){
-  celulares.addEventListener("click", function(){
-    btnDesplegable.textContent = `Celulares`;
-  })
+function cambiarCategoria() {
+  celulares.addEventListener("click", function () {
+    btnDesplegable.textContent = "Celulares";
 
-  notebooks.addEventListener("click", function(){
+    fetch("https://dummyjson.com/products/category/smartphones")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error de la respuesta");
+        }
+      })
+      .then((data) => {
+        traerProductos(data);
+      })
+      .catch((error) => console.error("Fetch error:", error));
+  });
+
+  notebooks.addEventListener("click", function () {
     btnDesplegable.textContent = `Notebooks`;
-  })
 
-  perfumes.addEventListener("click", function(){
+    fetch("https://dummyjson.com/products/category/laptops")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error de la respuesta");
+        }
+      })
+      .then((data) => {
+        traerProductos(data);
+      })
+      .catch((error) => console.error("Fetch error:", error));
+  });
+
+  perfumes.addEventListener("click", function () {
     btnDesplegable.textContent = `Perfumes`;
-  })
 
-  cuidadoPiel.addEventListener("click", function(){
+    fetch("https://dummyjson.com/products/category/fragrances")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error de la respuesta");
+        }
+      })
+      .then((data) => {
+        traerProductos(data);
+      })
+      .catch((error) => console.error("Fetch error:", error));
+  });
+
+  cuidadoPiel.addEventListener("click", function () {
     btnDesplegable.textContent = `Cuidado de la piel`;
-  })
 
-  mercado.addEventListener("click", function(){
+    fetch("https://dummyjson.com/products/category/fragrances")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error de la respuesta");
+        }
+      })
+      .then((data) => {
+        traerProductos(data);
+      })
+      .catch((error) => console.error("Fetch error:", error));
+  });
+
+  mercado.addEventListener("click", function () {
     btnDesplegable.textContent = `Mercado`;
-  })
 
-  decoracion.addEventListener("click", function(){
+    fetch("https://dummyjson.com/products/category/groceries")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error de la respuesta");
+        }
+      })
+      .then((data) => {
+        traerProductos(data);
+      })
+      .catch((error) => console.error("Fetch error:", error));
+  });
+
+  decoracion.addEventListener("click", function () {
     btnDesplegable.textContent = `Decoración`;
-  })
 
-  todos.addEventListener("click", function(){
-    btnDesplegable.textContent = `Todos los productos`
-  })
+    fetch("https://dummyjson.com/products/category/home-decoration")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error de la respuesta");
+        }
+      })
+      .then((data) => {
+        traerProductos(data);
+      })
+      .catch((error) => console.error("Fetch error:", error));
+  });
+
+  todos.addEventListener("click", function () {
+    btnDesplegable.textContent = `Todos los productos`;
+
+    fetch("https://dummyjson.com/products")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error de la respuesta");
+        }
+      })
+      .then((data) => {
+        traerProductos(data);
+      })
+      .catch((error) => console.error("Fetch error:", error));
+  });
 }
 
 fetch("https://dummyjson.com/products")
@@ -45,6 +136,10 @@ function traerProductos(data) {
   const productos = data.products;
   const productosContainer = document.getElementById("productosContainer");
 
+  document.getElementById("productosContainer").innerHTML = "";
+
+  console.log(productos);
+
   productos.forEach((producto) => {
     const imagenProducto = producto.images[0];
     const nombreProducto = producto.title;
@@ -60,6 +155,7 @@ function traerProductos(data) {
 
     //Agregando clases y id's
     productoDiv.setAttribute("class", "card ajusteDeTarjeta");
+    productoDiv.setAttribute("id", "ajusteDeTarjeta");
     imagenProductoElement.setAttribute("class", "imgTarjeta");
     cuerpoTarjetaDiv.setAttribute("class", "card-body");
     nombreProductoElement.setAttribute("class", "tituloTarjeta");

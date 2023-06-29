@@ -1,0 +1,50 @@
+/* Fomulario de contacto */
+.formularioContacto {
+    background-color: rgba(216, 112, 112, 0.5);
+    border-radius: 10px;
+    width: 40%;
+    margin: auto;
+  }
+  
+  .labelColor {
+    background-color: white !important;
+    opacity: 0.5 !important;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #D87070;
+  }
+  .inputColor {
+    background-color: white !important;
+    opacity: 0.5 !important;
+  }
+  
+  input[type="checkbox"] {
+    appearance: none;
+    color: #D87070;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #D87070;
+    border-radius: 0.15em;
+    display: inline-grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #D87070;
+    border: 0.15em #D87070;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  
+  /* Formulario de contacto fin */
