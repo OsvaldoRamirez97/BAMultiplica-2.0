@@ -53,7 +53,7 @@ function cambiarCategoria() {
   cuidadoPiel.addEventListener("click", function () {
     btnDesplegable.textContent = `Cuidado de la piel`;
 
-    fetch("https://dummyjson.com/products/category/fragrances")
+    fetch("https://dummyjson.com/products/category/skincare")
       .then((response) => {
         if (response.ok) {
           return response.json();
