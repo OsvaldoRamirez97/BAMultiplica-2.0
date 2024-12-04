@@ -49,34 +49,18 @@
   color: #d87070;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  font-size: 3.02vh;
-  margin-left: 10.1vh;
-  margin-top: 9.65vh;
+  margin: 5%;
 }
 
 /* Productos */
-
-.recientes {
-  display: flex;
-  justify-content: left;
-  margin-left: 10.1vh;
-}
-
-.promociones {
-  display: flex;
-  justify-content: left;
-  margin-left: 10.1vh;
-}
-
 .ajusteDeTarjeta {
-  height: 36.35vh !important;
-  width: 31.07vh;
+  width: 80%;
   box-shadow: 2px 2px rgba(216, 112, 112, 0.2);
 }
 
 .imgTarjeta {
-  width: 24.73vh;
-  height: 22.77vh;
+  width: auto;
+  height: 30vh;
   margin: auto;
   margin-top: 2.41vh;
   border-radius: 5px;
@@ -87,34 +71,40 @@
 }
 
 .tituloTarjeta {
-  font-size: 3.01vh;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  position: absolute;
 }
 
 .botonTarjeta {
   color: #d87070;
-  position: absolute;
-  margin: 4vh 0;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
-.card {
-  margin: 5vh;
-  border-radius: 15px !important;
+.recientes{
   display: flex;
-  text-align: center;
+  justify-content: space-evenly;
 }
 
-.mainProductos {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: stretch;
-  justify-content: center;
-  margin: 5vh;
+.visitadosRecientemente{
+  width: 20%;
 }
 
+.catalogo .promociones {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 10px; 
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.promociones img{
+  width: auto;
+  height: 20vh;
+}
+
+.promociones .ajusteDeTarjeta{
+  width: 80%;
+}
 /* Productos fin */
