@@ -1,42 +1,47 @@
 /* Productos */
 
 .listaProductos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 10px;
+  column-gap: 10px;
+}
   
   .ajusteDeTarjeta{
-    height: 60vh !important;
-    width: 18rem;
+    height: 35vh;
+    width: 30vh;
     box-shadow: 2px 2px rgba(216, 112, 112, 0.2);
+  }
+
+  div .tarjeta {
+    height: 30vh;
   }
   
   .imgTarjeta{
     width: 50%;
-    height: 20vh;
+    height: 35%;
+    object-fit: contain;
     margin: auto;
-    margin-top: 5px;
     border-radius: 5px;
   }
   
-  .tituloTarjeta{
-    height: 15vh;
-    font-size: 4vh;
-  }
-  
   .card {
-    margin: 5vh;
-    border-radius: 15px !important;
-    display: flex;
+    border-radius: 15px;
     text-align: center;
   }
-  
+
+.tituloTarjeta{
+  font-size: 25px;
+  height: 40px;
+  margin: 10px;
+}
+
   .descripcion{
-    height: 15vh;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    margin: 20px;
   }
   
   .mainProductos {
@@ -45,18 +50,27 @@
     flex-direction: row;
     align-content: stretch;
     justify-content: center;
-    margin: 5vh;
+    margin: 5%;
   }
   
+  .botonTarjeta {
+    margin: 5px;
+  }
+
   /* Productos fin */
 
 /* Buscador por categoría */
 
 .menuDesplegable{
+  display: block;
+  margin: 0 100px;
   color: #ffff;
   font-family: "Poppins", sans-serif;
+  margin-bottom: 20px; 
 }
 
 .btnDesplegable{
-  color: #ffff ;
+  color: #ffff;
+  margin: auto;
 }
+

@@ -24,7 +24,7 @@ function createProductCard(product) {
 
   productoDiv.setAttribute("class", "card ajusteDeTarjeta");
   imagenProductoElement.setAttribute("class", "imgTarjeta");
-  cuerpoTarjetaDiv.setAttribute("class", "card-body");
+  cuerpoTarjetaDiv.setAttribute("class", "tarjeta");
   nombreProductoElement.setAttribute("class", "tituloTarjeta");
   descripcionProductoElement.setAttribute("class", "h-25 descripcion");
   botonTarjeta.setAttribute("class", "btn btn-primary btnColor botonTarjeta");
